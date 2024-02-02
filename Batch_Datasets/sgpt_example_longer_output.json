@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "length": 32,
+    "conversations": [
+      {
+        "from": "human",
+        "value": "color?"
+      },
+      {
+        "from": "gpt",
+        "value": "red!"
+      },
+      {
+        "from": "human",
+        "value": "nice"
+      },
+      {
+        "from": "gpt",
+        "value": "tnx"
+      },
+      {
+        "from": "human",
+        "value": "q?"
+      },
+      {
+        "from": "gpt",
+        "value": "a"
+      },
+      {
+        "from": "human",
+        "value": "dog?"
+      },
+      {
+        "from": "gpt",
+        "value": "cat!"
+      },
+      {
+        "from": "human",
+        "value": "q?"
+      },
+      {
+        "from": "gpt",
+        "value": "aa"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "length": 3,
+    "conversations": [
+      {
+        "from": "human",
+        "value": "q?"
+      },
+      {
+        "from": "gpt",
+        "value": "a"
+      }
+    ]
+  }
+]

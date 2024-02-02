@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "length": 17,
+    "conversations": [
+      {
+        "from": "human",
+        "value": "color?"
+      },
+      {
+        "from": "gpt",
+        "value": "red!"
+      },
+      {
+        "from": "human",
+        "value": "nice"
+      },
+      {
+        "from": "gpt",
+        "value": "tnx"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "length": 11,
+    "conversations": [
+      {
+        "from": "human",
+        "value": "q?"
+      },
+      {
+        "from": "gpt",
+        "value": "a"
+      },
+      {
+        "from": "human",
+        "value": "dog?"
+      },
+      {
+        "from": "gpt",
+        "value": "cat!"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "length": 4,
+    "conversations": [
+      {
+        "from": "human",
+        "value": "q?"
+      },
+      {
+        "from": "gpt",
+        "value": "aa"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "length": 3,
+    "conversations": [
+      {
+        "from": "human",
+        "value": "q?"
+      },
+      {
+        "from": "gpt",
+        "value": "a"
+      }
+    ]
+  }
+]
