@@ -134,16 +134,28 @@ def merge_json_files(input_dir, output_file):
 
             # Assign a unique ID to each conversation entry and calculate length
             for conversation in conversations:
-                conversation["id"] = current_id
-                current_id += 1
-                conversation["length"] = sum(len(conv["value"]) for conv in conversation["conversations"] if conv["from"] == "gpt")
+                # Initialize lengths for human and gpt texts
+                human_length = 0
+                gpt_length = 0
+
+                # Calculate length for human and gpt texts separately
+                for conv in conversation["conversations"]:
+                    if conv["from"] == "human":
+                        human_length += len(conv["value"])
+                    elif conv["from"] == "gpt":
+                        gpt_length += len(conv["value"])
+
+                # Sum up lengths
+                total_length = human_length + gpt_length
 
                 # Define the structure of each conversation item
                 conv_item = {
-                    "id": conversation["id"],
-                    "length": conversation["length"],
+                    "id": current_id,
+                    "length": total_length,
                     "conversations": conversation["conversations"]
                 }
+
+                current_id += 1
 
                 # Append each conversation to the merged_data list
                 merged_data.append(conv_item)
@@ -155,6 +167,7 @@ def merge_json_files(input_dir, output_file):
     # Delete temporary directories
     shutil.rmtree('output')
     shutil.rmtree('output_2')
+
 
 if __name__ == "__main__":
     create_and_modify_json()
